@@ -1,0 +1,68 @@
+.stopwatchLayout {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.buttonGroup {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.buttonGroup button {
+  flex: 1;
+  padding: 0.4rem 0rem;
+  border: 1px solid white;
+  background: rgb(24, 23, 23);
+  color: white;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+
+.stopWatachContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.stopwatch{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.stopWatachContent {
+  display: flex;
+  flex-direction: row;
+  gap: 0.1rem;
+}
+
+
+.digit{
+    border: 1px solid white;
+    color: white;
+    padding: 0.4rem;
+}
+
+
+
+.seperator{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.dot{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+
+@media (max-width: 659px) {
+  .buttonGroup {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}

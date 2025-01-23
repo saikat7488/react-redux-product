@@ -1,0 +1,100 @@
+.timerLayout {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.buttonGroup {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.buttonGroup button {
+  flex: 1;
+  padding: 0.4rem 0rem;
+  border: 1px solid white;
+  background: rgb(24, 23, 23);
+  color: white;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+
+.timerContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.timer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.timerContent {
+  display: flex;
+  flex-direction: row;
+  gap: 0.1rem;
+}
+
+.digit {
+  border: 1px solid white;
+  color: white;
+  padding: 0.4rem;
+}
+
+.seperator {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+.inputSubmitBtn {
+  padding: 2px 0.4rem;
+  background: black;
+  border: none;
+  outline: none;
+  color: white;
+  border: 2px solid white;
+}
+
+.inputField {
+  width: 40px;
+  height: 31px;
+  background: transparent;
+  outline: none;
+  border: 1px solid white;
+  text-align: center;
+  color: white;
+  appearance: none;
+  -moz-appearance: textfield; /* Firefox */
+  -webkit-appearance: none;
+}
+
+/* styles.css */
+.custom-number-input {
+  appearance: none;
+  -moz-appearance: textfield; /* Firefox */
+  -webkit-appearance: none; /* Chrome, Safari, Edge */
+}
+
+.inputField::-webkit-inner-spin-button,
+.inputField::-webkit-outer-spin-button {
+  -webkit-appearance: none; /* Removes the spinners */
+  margin: 0; /* Removes extra margin added by default */
+}
+
+@media (max-width: 659px) {
+  .buttonGroup {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}

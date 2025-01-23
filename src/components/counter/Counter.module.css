@@ -1,0 +1,59 @@
+.counterLayout {
+  width: 100%;
+}
+
+.counterLayout .containerLayout {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.counterLayout .containerLayout p {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase !important;
+}
+
+.buttonGroup {
+  display: flex;
+}
+
+.buttonGroup button {
+  flex: 1;
+  padding: 0.4rem 0rem;
+  font-weight: 500;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  background: rgb(24, 23, 23);
+  color: white;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+
+.inputField {
+  width: 100%;
+  padding: 0.4rem 0.2rem;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  background: rgb(24, 23, 23);
+  color: white;
+  text-transform: uppercase;
+  border-radius: 4px;
+  text-align: center;
+}
+.inputField:hover,
+.inputField:focus {
+  outline: none;
+}
+.inputField::placeholder {
+  text-align: center;
+  text-transform: uppercase !important;
+}
+
+@media (max-width: 659px) {
+  .buttonGroup {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}

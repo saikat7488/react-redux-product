@@ -1,0 +1,39 @@
+/* Apply universal box-sizing */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/* Reset margin and padding for pseudo-elements */
+*::before,
+*::after {
+  content: ""; /* Ensure pseudo-elements render properly */
+  box-sizing: inherit; /* Inherit box-sizing from the parent */
+  margin: 0;
+  padding: 0;
+}
+
+
+body{
+  background: rgba(0, 0, 0, 0.858);
+}
+
+@media (max-width: 659px) {
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 491px) {
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+  }
+}
